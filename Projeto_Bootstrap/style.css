@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Menu Transparente */
+.navbar-custom {
+  background-color: transparent !important;
+}
+.color {
+  color: black !important;
+}
+.bemvindo {
+  padding: 110px;
+}
+.suascommodities {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.suascommodities2 {
+  padding-top: 98px;
+}
+.bg-container {
+  background-color: #f0ead2;
+}
+.bg-custom2 {
+  background-color: #adc178;
+}
+.bg-custom {
+  background-color: #dde5b6;
+}
+
+/* Modal Newsletter */
+.modal-newsletter {
+  color: #999;
+  font-size: 15px;
+}
+.modal-newsletter .modal-content {
+  padding: 40px;
+  border-radius: 0;
+  border: none;
+}
+.modal-newsletter .modal-header {
+  border-bottom: none;
+  position: relative;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+.modal-newsletter h4 {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.modal-newsletter .close {
+  background-color: #c0c3c8;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: #fff;
+  text-shadow: none;
+  opacity: 0.5;
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.modal-newsletter .close span {
+  position: relative;
+  top: -8px;
+  right: 11px;
+}
+.modal-newsletter .close:hover {
+  opacity: 0.8;
+}
+.modal-newsletter .form-control,
+.modal-newsletter .btn {
+  min-height: 46px;
+  border-radius: 3px;
+}
+.modal-newsletter .form-control {
+  box-shadow: none;
+  border-color: #dbdbdb;
+}
+.modal-newsletter .form-control:focus {
+  border-color: #19bc9c;
+  box-shadow: 0 0 8px rgba(114, 101, 234, 0.5);
+}
+.modal-newsletter .btn {
+  color: #fff;
+  border-radius: 4px;
+  background: #19bc9c;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  padding: 6px 20px;
+  min-width: 150px;
+  border: none;
+  margin-top: 5px;
+}
+.modal-newsletter .btn:hover,
+.modal-newsletter .btn:focus {
+  background: #4e3de4;
+  outline: none;
+}
+.modal-newsletter .input-group {
+  margin: 30px 0 15px;
+}
+.hint-text {
+  margin: 100px auto;
+  text-align: center;
+}
+.main-footer {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgba(251, 251, 251, 0.171);
+}
+
+@media (max-width: 765px) {
+  .navbar-custom {
+    background-color: rgba(256, 256, 256, 0.171) !important;
+    border-radius: 15px;
+  }
+}
+
+.carousel-item img {
+  height: 300px;
+}
+
+.row {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-footer {
+    text-align: center;
+  background-color: #6c584c;
+  color: white;
+}
+
+/* .fixed-action-btn>.btn-floating{
+    position:relative;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border: 0;
+}
+
+.fixed-action-btn{
+    position:fixed;
+    right: 0.2rem;
+    bottom: 4.1rem;
+    z-index: 1030;
+    display:flex; */
+    /* -webkit-box-orient: vertical; /
+    flex-flow: column reverse nowrap;
+    align-items: center;
+    / overflow: hidden; */
+
+/* .dropdown-menu.show{
+    background-color: rgb(256, 256, 256, 0.00001);
+    border-left: 50px;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+

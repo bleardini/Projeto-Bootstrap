@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Formulario Manual Agricola</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body class="bg-container">
+
+    <!-- Menu Transparente -->
+    <header class="container-fluid">
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-md navbar-light navbar-custom">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">Manual Agricola</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                    aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav">
+                        
+                        <li>
+                            <a class="nav-link color" href="quemSomos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Conteúdo
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="agronegocio.html">Agronegócio</a>
+                              <a class="dropdown-item" href="familia.html">Agricultura Familiar</a>
+                              <a class="dropdown-item" href="irrigacao.html">Irrigação</a>
+                              <a class="dropdown-item" href="mecanizacao.html">Mecanização</a>
+                              <a class="dropdown-item" href="nutricao.html">Nutrição</a>
+                              <a class="dropdown-item" href="precisao.html">Precisão</a>
+                            </div>
+                          </li>
+                        <li>
+                            <a class="nav-link color" href="formulario.html">Registre-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container box-1">
+        <h1>Formulario</h1>
+        <form action="" class="was-validated" novalidate>
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <input class="form-control" type="text" id="nomeCampo" placeholder="Nome Completo" required>
+                    <div class="valid-feedback">Válido</div>
+                    <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" id="cpfCampo" placeholder="CPF" maxlength="11" required>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" id="emailCampo" placeholder="Email" required>
+                <div class="valid-feedback">Válido</div>
+                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+            </div>
+
+            <div class="form-group">
+                <p>Aceita os Termos de uso?</p>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" id="checkCampo" value="yes" name="checkOpcao">
+                    <label class="form-check-label" for="checkOpcao">Sim</label>
+                </div>
+                <div class="form-check-inline">
+                    <input class="form-check-input" type="radio" id="checkCampo" value="no" name="checkOpcao">
+                    <label class="form-check-label" for="checkOpcao">Não</label>
+                </div>
+            </div>
+            <div class="class">
+
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success" type="button" onclick="testaCPF()">Confirmar</button>
+            </div>
+        </form>
+
+    </div>
+
+    <footer class="main-footer">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <strong>Termos | Privacidade | Sobre | Configurações</strong> <br>
+        <strong>Todos os direitos Reservados &copy; | 2021</strong><br>
+        <small>@Site desenvolvido por Manual Agrícola Software Web/Mobile&copy;</small>
+    </footer>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

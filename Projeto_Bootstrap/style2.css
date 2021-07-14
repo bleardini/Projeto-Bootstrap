@@ -1,0 +1,54 @@
+.bg-container {
+  background-color: #f0ead2;
+}
+.bg-custom2 {
+  background-color: #adc178;
+}
+.bg-custom {
+  background-color: #dde5b6;
+}
+.form-cadastro{
+    height: 100vh;
+}
+.area-form{
+    height: 70vh;
+}
+.box-1{
+  height: 82vh;
+}
+.main-footer{
+    text-align: center;
+    background-color: #6c584c;
+    color: white;
+}
+.menufinal .fixed-action-btn>.btn-floating{
+  position:relative;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  border: 0;
+}
+
+.menufinal  .fixed-action-btn{
+  position:fixed;
+  right: 0.2rem;
+  bottom: 4.1rem;
+  z-index: 1030;
+  display:flex;
+  /* -webkit-box-orient: vertical; /
+  flex-flow: column reverse nowrap;
+  align-items: center;
+  / overflow: hidden; */
+
+}
+
+
+.menufinal  .dropdown-menu.show{
+  background-color: rgb(256, 256, 256, 0.00001);
+  border-left: 50px;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}

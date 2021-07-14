@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Agricultura de Precisão</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class=" bg-container">
+
+    <div class="background-custom">
+       <!-- Menu Transparente -->
+    <header class="container-fluid">
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-md navbar-light navbar-custom">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">Manual Agricola</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                    aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav">
+                        
+                        <li>
+                            <a class="nav-link color" href="quemSomos.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Conteúdo
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="agronegocio.html">Agronegócio</a>
+                              <a class="dropdown-item" href="familia.html">Agricultura Familiar</a>
+                              <a class="dropdown-item" href="irrigacao.html">Irrigação</a>
+                              <a class="dropdown-item" href="mecanizacao.html">Mecanização</a>
+                              <a class="dropdown-item" href="nutricao.html">Nutrição</a>
+                              <a class="dropdown-item" href="precisao.html">Precisão</a>
+                            </div>
+                          </li>
+                        <li>
+                            <a class="nav-link color" href="formulario.html">Registre-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </div>
+    <main>
+        <!-- Newsletter -->
+        <section class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg modal-newsletter">
+                <div class="modal-content">
+                    <form action="confirmation" method="post">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <span>&#10006;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <h4>Assine a nossa Newsletter</h4>
+                            <p>Tenha sempre uma novidade do nosso mundão das fazendas e diversas opcões de sobre
+                                leilões, produtos, técnicas...</p>
+                            <input type="email" class="form-control" placeholder="Entre com seu email" required>
+                            <span class="input-input-btn">
+                                <input type="submit" class="botao-newsletter btn btn-primary" value="Subscribe">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p class="hint-text"><strong>Note:</strong> Atualize a página ou execute o código para recarregar o modal
+            </p>
+        </section>
+
+        <section>
+            <div class="container" id="artigos">
+                <div class="col-md-12">
+                    <h1>Agricultura de precisão</h1>
+                    
+                    <p>A agricultura de precisão, é uma tecnologia cujo objetivo, consiste em aumentar a produção com
+                        maior eficiência e sustentabilidade dos recursos econômicos e ambientais.</p>
+
+                    <p>Quer saber mais sobre essa tecnologia e seus benefícios para sua propriedade?</p>
+                </div>
+
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body bg-custom">
+
+                            <div class="text-justify">
+                                <img src="Manual Agricola/Precisão/Precisão1.png" width="100%" alt="">
+                                <h3>Ferramentas de agricultura de precisão como auxílio ao manejo da fertilidade do
+                                    solo.</h3>
+                                <button data-toggle="collapse" class="btn btn-info" data-target="#collapseInfo">Ler mais</button>
+                                   
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-body bg-custom2">
+
+                            <div class=" text-justify">
+                                <img src="Manual Agricola/Precisão/Precisão2.png" width="100%" alt="">
+                                <h3>Avanços, dificuldades e impactos no manejo e
+                                    conservação
+                                    do solo, segurança alimentar e sustentabilidade.</h3>
+
+                                <button data-toggle="collapse" class="btn btn-info" data-target="#collapseInfo2" onclick="mostraArtigo2()">Ler mais</button>    
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                  
+                <div class="collapse" id="collapseInfo" data-parent="#artigos">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Ferramentas de agricultura de precisão como auxílio ao manejo da fertilidade do
+                                solo.</h2>
+                            <p>O Brasil tem grande potencial para contribuir para aumentar a oferta de alimentos no
+                                mundo e,
+                                também, para atender à crescente demanda interna de sua
+                                população. Isso pode ser alcançado pelo aumento da produção agrícola, seja pelo
+                                aumento de
+                                produtividade, seja pela expansão da área plantada. Durante os últimos 30
+                                anos, a produção de grãos no Brasil cresceu a uma taxa de 4,6% ao ano, enquanto a
+                                área
+                                plantada cresceu apenas 1,7% ao ano (MARTHA JÚNIOR et al., 2010). Essa diferença
+                                é explicada pelo aumento da produtividade, em grande parte devido ao uso racional de
+                                fertilizantes. Esses aumentos de produtividade agrícola no Brasil se basearam na
+                                inovação tecnológica, e, assim, um fluxo contínuo de conhecimentos técnicos é uma
+                                condição
+                                necessária para a sustentabilidade do setor.</p>
+                                <a href="https://ainfo.cnptia.embrapa.br/digital/bitstream/item/139327/1/Cad-Ci-Tecnol-v32-p211-217-2015.pdf" target="_blank">Fonte</a>
+                        </div>
+
+                    </div>
+                </div>
+              
+                <div class="collapse" id="collapseInfo2" data-parent="#artigos">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Agricultura de precisão no Brasil: avanços, dificuldades e impactos no manejo e
+                                conservação
+                                do solo, segurança alimentar e sustentabilidade.</h2>
+                            <p> De acordo com uma de suas definições, a agricultura de precisão (AP) consiste de um conjunto de princípios e tecnologias aplicados no manejo da variabilidade espacial e temporal associada à produção agrícola, objetivando aumentar a produtividade das culturas e a qualidade ambiental (Pierce & Nowak, 1999). 
+                                Em termos práticos, envolve a obtenção e processamento de informações detalhadas e georreferenciadas sobre as áreas de cultivo agrícola, visando definir estratégias de manejo mais eficientes, em especial, o uso racional de insumos. Com desenvolvimento recente, a AP foi introduzida no Brasil a pouco mais de
+                                 uma década, mas apresenta grande potencial de aplicação na produção de grãos e em culturas perenes, o que, certamente, contribuirá de forma positiva para a garantia da segurança alimentar, com sustentabilidade econômica e ambiental. As técnicas associadas à AP despertam crescente interesse no meio científico 
+                                 e entre aqueles que se dedicam à atividade agropecuária no Brasil, incluindo produtores rurais e, principalmente, fabricantes de equipamentos, prestadores de serviços e consultores agrícolas. Áreas muito expressivas, ocupadas sobretudo por culturas anuais e cana-de-açúcar, já são manejadas sob algum enfoque 
+                                 da AP, destacando-se a utilização de amostragem georeferenciada para o mapeamento da fertilidade do solo e posterior aplicação de corretivos e fertilizantes a taxa variável. O impacto mais imediato do tratamento diferenciado das lavouras em relação ao manejo de corretivos e fertilizantes tem sido a possibilidade 
+                                 de economia de insumos comparativamente ao manejo tradicional, no qual se utilizam dosagens uniformes em área total baseadas na condição média de fertilidade do talhão. Apesar de certa euforia observada entre os agricultores, impulsionada pelas vantagens econômicas imediatas e pela intensa propaganda difundida 
+                                 pelas empresas prestadoras de serviços de AP, as ações de pesquisa associadas a essa temática vêm evoluindo em ritmo aquém do desejável, em parte, devido à maior complexidade dos procedimentos experimentais envolvidos nos estudos de AP. Nesse cenário, constata-se uma grande defasagem entre as práticas que vêm 
+                                 sendo utilizadas em larga escala no setor produtivo e o que seriam tecnologias de AP validadas com rigor científico. Neste trabalho, é apresentada uma análise crítica sobre a situação atual da agricultura de precisão no Brasil, com foco no manejo da fertilidade do solo em sistemas de produção de culturas anuais, 
+                                 procurando-se destacar os principais aspectos positivos, as limitações, os benefícios potenciais e a necessidade de pesquisa relacionada a essa importante e inovadora abordagem na atividade agropecuária.</p>
+                                <a href="https://ainfo.cnptia.embrapa.br/digital/bitstream/item/29842/1/Agricultura-precisao.pdf" target="_blank">Fonte</a>
+                        </div>
+
+                    </div>
+                </div>
+                
+
+                <div class="card-deck mt-2">
+                    <div class="card">
+                        <div class="card-body bg-custom">
+
+                            <div class="text-justify">
+                                <img src="Manual Agricola/Precisão/Precisão3.png" width="100%" alt="">
+                                <h3>Importância dos Sensores e suas aplicações</h3>
+
+                                
+                                   <!--   -->
+                                    <button data-toggle="collapse" class="btn btn-info" data-target="#collapseInfo3" >Ler mais</button> 
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-body bg-custom2">
+
+                            <div class=" text-justify">
+                                <img src="Manual Agricola/Precisão/Precisão4.png" width="100%" alt="">
+                                <h3>Drones</h3>
+
+                               
+                                    <button data-toggle="collapse" class="btn btn-info" data-target="#collapseInfo4" onclick="mostraArtigo2()">Ler mais</button> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseInfo3" data-parent="#artigos">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Agricultura de Precisão: Importância dos Sensores e suas aplicações</h2>
+                            <p>A agricultura é uma atividade milenar, datada por alguns historiadores como há mais de doze mil anos, entre o período da pré-história, 
+                                neolítico e a idade da pedra lascada. Tal atividade possibilitou ao homem se fixar em um local e a partir daí a construção de cidades e o
+                                 modelo de vida que temos atualmente. A produção agrícola gerou não só o avanço do homem enquanto sociedade, mas também proporcionou
+                                  avanços tecnológicos, sem o cultivo em larga escala não haveria a quantidade de alimentos suficientes necessários para alimentar o 
+                                  número de pessoas existentes nas grandes metrópoles, e em todo o mundo. A grande produção de diversas culturas hoje existente se dá
+                                   pelo avanço das pesquisas e consequentemente o desenvolvimento de tecnologias que otimizam cada vez mais o cultivo a afim de uma maior 
+                                   produtividade.</p>
+                            <p>Há algum tempo cada vez mais são levantadas questões relacionadas ao uso consciente e racional dos recursos naturais, a prática de uma 
+                                agricultura onde o manejo de solo e água, por exemplo, seja feita da forma mais adequada e exata possível a fim de evitar desperdícios 
+                                e problemas relacionados a contaminação destes. Como uma das estratégias para minimizar estas problemáticas está o uso cada vez mais
+                                 preciso de insumos dentro dos sistemas de produção, e a Agricultura de Precisão (AP) é uma forte aliada. Segundo o Ministério da 
+                                 Agricultura, Pecuária e Abastecimento brasileiro a AP pode ser entendida como um conjunto de técnicas e metodologias que visam otimizar
+                                  o manejo de cultivos e a utilização dos insumos agrícolas,proporcionando máxima eficiência econômica, permitindo o uso racional de, por 
+                                  exemplo, fertilizantes e agroquímicos garantindo a redução dos impactos ambientais decorrente das atividades agrícolas. A prática da AP
+                                   baseia-se fundamentalmente na utilização do Sistema Posicionamento Global por Satélites (GPS), onde o objetivo é basicamente solucionar
+                                    problemas de desuniformidades nas lavouras com a subdivisão delas em talhões cada vez menores e mais homogêneos com o intuito de 
+                                    proporcionar um manejo mais eficiente para cada área.</p>       
+                            <p>Tão importante quanto o GPS são os sensores utilizados nessas operações, eles auxiliam cada vez mais a medir as variáveis existentes na
+                                 produção em tempo real e a partir daí pode ser feito um manejo mais específico e adequado às condições existentes nas propriedades. As 
+                                 medições realizadas nessas áreas subdivididas mais homogêneas permitem ao produtor um manejo diferenciado de acordo com as exigências e 
+                                 condições tidas, tornando mais específico e correto as operações a serem feitas; isso pode gerar uma maior economia ao produtor quando 
+                                 visto a utilização mais precisa da quantidade de insumos. Além do ponto de vista ambiental onde não se utilizará excedentes podendo causar
+                                  algum tipo de contaminação do solo, quando falado de adubos químicos, por exemplo. A gama de sensores aplicados a AP é infinda, visto o 
+                                  número de variáveis dentro da cadeia de produção agrícola, como análise de solo, colheita mecanizada, níveis de infestação de plantas 
+                                  invasoras, por exemplo. Como princípio básico de funcionamento os sensores devem ser capazes de converter as mais diversas grandezas 
+                                  físicas em sinais elétricos. Esses sinais são transmitidos à um controlador e podem ser armazenados.</p>        
+                            <!-- <p>A seguir traremos exemplos de sensores utilizados na agricultura com a finalidade de proporcionar um melhor manejo:</p>      
+                            <ul>
+                                <li><strong>Umidade do solo</strong></li>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/decagon.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>O Decagon 10HS é um exemplo de sensor de umidade do solo, onde ele este deve ser empregado em conjunto a outros na área a 
+                                                fim de fornecer uma leitura mais precisa. Também pode ser utilizado em profundidades diferentes, possibilitando indicar um 
+                                                perfil de água ao longo do perfil de solo.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <li><strong>Elétrica e Umidade do solo</strong> </li>
+                                <div class="container">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-8">
+                                            <p>O Meter TEROS 12 é um sensor que torna possível não só a medição de umidade, assim como o anterior, mas também a condutividade
+                                                 elétrica do solo e sua temperatura. Ele possibilita também indicar um perfil de água no solo, além de poder ser aliado a informações
+                                                  de outras medições a fim de auxiliar outras operações.</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/meter.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <li><strong>Salinidade, Umidade do solo e Temperatura</strong></li>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/sentek.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Sentek Drill & Drop é um sensor mais sofisticados onde há a junção de sensores em um mesmo aparelho, proporcionando a leitura de mais 
+                                                de uma variável. Ele faz leituras de umidade do solo, temperatura e salinidade (quantidade de íons no solo) a cada 10cm de profundidade.</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <li><strong>Controle de Ervas daninhas</strong> </li>
+                                <div class="container">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-8">
+                                            <p>O equipamento tem como funcionamento a detecção de clorofila das plantas daninhas e assim realizar a aplicação do herbicida. A leitura feita 
+                                                pelos sensores é através da emissão de uma luz vermelha de alta intensidade para detectar essas plantas vivas indesejadas. De acordo com os 
+                                                fabricantes o conjunto de sensores realiza leituras com uma frequência de 40 mil vezes por segundo. A clorofila das plantas responde à luz 
+                                                vermelha emitida pelo sensor absorvendo-a e emitindo luz NIR (Espectrômetros de infravermelho próximo) através da fluorescência, essa emissão 
+                                                é então detectada pelos sensores.</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="img/smart.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </ul> -->
+                            <a href="https://petagronomia.ufc.br/pt/tecnopet/agricultura-de-precisao-importancia-dos-sensores-e-suas-aplicacoes/" target="_blank">Fonte</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapseInfo4" data-parent="#artigos">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Drones</h2>
+                            <p>Os drones servem para analisar a lavoura e detectar a presença de pragas e doenças, as falhas de plantio, entre outros problemas. Para ter uma 
+                                ideia da importância dessa ferramenta, a agricultura já utiliza metade dos 20 mil drones civis registrados no país, segundo Gottlieb.</p> 
+                            <p>Os seus sensores captam imagens e oferecem, assim, indicadores agronômicos com precisão centimétrica. A baixa altitude (150 metros) proporciona essa precisão.</p>  
+                            <p>Outra vantagem dos drones é que eles não são prejudicados pelas nuvens, já que a 150 metros de altitude elas não existem. Há dois tipos de drones: o de asa fixa, que
+                                 se assemelha a um avião pequeno, e o de vários rotores, ou multirrotor.</p>           
+                            <a href="https://academiadoplantio.fertisystem.com.br/ferramentas-para-agricultura-de-precisao/" target="_blank">Fonte</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+                    
+        </section>
+    </main>
+
+    <!-- Lupa -->
+    <div class="menu-final">
+        <div class="fixed-action-btn" id="fixed1" style="height: 80px;">
+            <a class="  btn-floating btn-primary btn-lg " style="background-color: rgb(256, 256, 256, 0.00008);">
+              <i class="fas fa-pencil-alt"></i>
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img  src="lupa.png" style="height: 25px">
+                </button>
+                <div class="dropdown-menu ">
+                    <div style=" display:grid;
+                    padding-left:50px;
+                    flex-direction: row;
+                    justify-content: center;
+                    background-color:rgb(256, 256, 256, 0.00008);
+                    border: 0;
+                    align-items: flex-end;">
+                        <button class="btn btn-light " onclick = "aumentar()">A +</button>
+                    </div>
+                    <div style=" display:grid;
+                    padding-left:50px;
+                    flex-direction: row;
+                    justify-content: center;
+                    background-color:rgb(256, 256, 256, 0.00008);
+                    border: 0;
+                    align-items: flex-end;">
+                        <button class="btn btn-light " onclick = "diminuir()">A -</button>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <p id="logou"></p>
+        
+            <script>
+                tamanho = 14;
+                function diminuir(){
+                    tamanho -=3;
+                    document.body.style.fontSize = tamanho + "px";
+                }
+                function aumentar(){
+                    tamanho +=3;
+                    document.body.style.fontSize = tamanho + "px";
+                }
+            </script>
+    </div>
+
+    <footer class="main-footer">
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <strong>Termos | Privacidade | Sobre | Configurações</strong> <br>
+        <strong>Todos os direitos Reservados &copy; | 2021</strong><br>
+        <small>@Site desenvolvido por Manual Agrícola software Web/Mobile&copy;</small>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
